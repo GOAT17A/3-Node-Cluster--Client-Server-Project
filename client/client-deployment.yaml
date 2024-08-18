@@ -16,9 +16,10 @@ spec:
     spec:
       containers:
       - name: client
-        image: dapkeprajwal/client-app:latest  # Replace with your image
+        image: dockangad/client-app:latest  # Replace with your image
         ports:
         - containerPort: 80
         env:
         - name: SERVER_URL
           value: "http://localhost:5000/message"  # Replace with your server URL
+
