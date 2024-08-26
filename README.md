@@ -1,7 +1,7 @@
 Kubernetes 3-Node Cluster with Docker
 This repository contains a project that demonstrates the setup and deployment of a containerized application using Docker and Kubernetes on a 3-node cluster. The setup includes one master node and two worker nodes, configured using VirtualBox on Ubuntu servers.
 
-Table of Contents
+Table of Contents : 
 1.Introduction
 2.Project Structure
 3.Prerequisites
@@ -54,24 +54,22 @@ Install a Container Network Interface (CNI) plugin if not already installed.
 Build Docker Images:
 
 Navigate to the Dockerfiles directory and build the images for the client and server applications.
-bash
-Copy code
+
 docker build -t client-app:latest Dockerfiles/client/
 docker build -t server-app:latest Dockerfiles/server/
+
 Push Images to Docker Registry:
 
 Push the Docker images to your preferred Docker registry.
 Deploy to Kubernetes Cluster:
 
 Apply the Kubernetes manifests to deploy the applications.
-bash
-Copy code
+
 kubectl apply -f k8s-manifests/
 Verify Deployment:
 
 Check the status of your pods and services to ensure they are running correctly.
-bash
-Copy code
+
 kubectl get pods
 kubectl get services
 
