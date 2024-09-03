@@ -1,5 +1,5 @@
 Kubernetes 3-Node Cluster with Docker
-This repository contains a project that demonstrates the setup and deployment of a containerized application using Docker and Kubernetes on a 3-node cluster. The setup includes one master node and two worker nodes, configured using VirtualBox/AWS EC2 instance on Ubuntu servers.
+This repository contains a project that demonstrates the setup and deployment of a containerized application using Docker and Kubernetes on a 3-node cluster. The setup includes one master node and two worker nodes, configured using VirtualBox/AWS EC2/Azure VMs instance on Ubuntu servers.
 
 Table of Contents : 
 1.Introduction
@@ -26,6 +26,7 @@ Before you begin, ensure you have the following installed:
 
 VirtualBox: For creating virtual machines.
 AWS: EC2 instances 
+Azure VMs
 Ubuntu Server: Installed on the VMs.
 Docker: To containerize the applications.
 Kubernetes (MicroK8s): To manage the cluster.
@@ -34,7 +35,7 @@ kubectl: Kubernetes command-line tool.
 4.Setup Instructions
 Create Virtual Machines:
 
-Set up three VMs using VirtualBox/AWS (1 master node, 2 worker nodes).
+Set up three VMs using VirtualBox/AWS/Azure (1 master node, 2 worker nodes).
 Install Ubuntu Server on all VMs.
 Install Docker:
 
